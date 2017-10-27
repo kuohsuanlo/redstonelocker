@@ -88,7 +88,7 @@ none.
 
 ----
 ### Todos
- - Welcome any suggestions from my customers !
+ - Your suggestions are welcome at any time.
 
 ----
 ### License
