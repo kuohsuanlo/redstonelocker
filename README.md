@@ -14,8 +14,11 @@ This plugin is a minecraft server-side spigot plugin in order to enhance the exp
     1. All of the redstone components for calculating as part of the flickers are configurable, including 
     ![](https://www.csie.ntu.edu.tw/~b98902055/items/55-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/149-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/151-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/157-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/158-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/131-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/72-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/71-0.png)... and so on.
   - Soft Removal ![](https://www.csie.ntu.edu.tw/~b98902055/items/285-0.png) 
-    1. Intead of brutally place a sign ![](https://www.csie.ntu.edu.tw/~b98902055/items/323-0.png) that triggers the player. This plugin quickly find the source and ' gently turn in off '. To watch how the plugin did the job
-    2. Heuristic functions are included to polish the removal and avoid the [notorious false positive].
+    1. Intead of brutally place a sign ![](https://www.csie.ntu.edu.tw/~b98902055/items/323-0.png) that triggers the player. Instead, this plugin quickly find the source and ' gently turn in off ', also use a banned effect to notice the player.
+
+    2. Heuristic functions are included to polish the removal and avoid false positive. 
+
+    3. This plugin would first try to turn off the redstone flickers. If players build the flickers with an automatic re-triggering wire. This plugin would only remove the power source of the flickers, NOT the whole wire.
   ### Media demo : 
   
 *A flicker without automatic re-triggering wire (Could be turned off by switching the comparator)
