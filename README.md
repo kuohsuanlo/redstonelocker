@@ -76,11 +76,13 @@ Verbosity: 0
 ENABLED_WORLD: world,world_nether,world_the_end
 # change into the world name you are interested in applying RedstoneLocker!
 StructureDistance: 3
-# the radius of a group of redstone structures. Just leave it 3. It is a tuned parameters. 
-ReleasingTimeSecond: 10
+# the radius of a group of redstone structures. Just leave it 3. It is a tuned parameters.
+ReleasingTimeSecond: 120
 # After a redstone structure has been detected containing flickers, how long would this area could fire redstone event without being ignore.
-PeriodicalTicksMax: 25
-# How much a ball space radius = 3(StructureDistance) could fire redstone event every second. (A circuit could fire multiple events based on how many components are considered. See the component config below.)
+CheckingPeriodSecond: 4
+# How long is a period for calculating [PeriodicalTicksMax] (below)
+PeriodicalTicksMax: 59
+# How much an Enclidean radius = [StructureDistance] could fire redstone signal event every give time [CheckingPeriodSecond]. 
 
 COUNTING_TORCH: true
 # Should the redstone torches counted as a component?
@@ -105,7 +107,7 @@ COUNTING_DROPPER: false
 COUNTING_DOOR: true
 COUNTING_COMMAND_BLOCK: false
 COUNTING_RAIL: false
-# All of the above setting is well-tuned and ready to be used. 
+# All of the above setting is well-tuned and ready to be used.
 
 ```
 ----
