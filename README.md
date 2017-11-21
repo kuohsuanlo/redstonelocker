@@ -1,12 +1,12 @@
 # RedstoneLocker --- Powered by [LogoCat](https://mcuuid.net/?q=logocat) 
 [![mcfallout](https://i.imgur.com/o6S7V07.png)](https://mcfallout.net)
-Jar Download link: [Spigot Page](https://www.spigotmc.org/resources/redstone-locker-detect-and-turn-off-flickers-without-moving-the-circuit.48817/)
+Jar Download link: [Spigot Page](https://www.spigotmc.org/resources/falloutcraft.20984/)
 
 This plugin is a minecraft server-side spigot plugin in order to enhance the experience of:
   - Detect the source of redstone flicker and stop it right away
   - With the minimal changes to the user's orginal design (No MORE ![](https://www.csie.ntu.edu.tw/~b98902055/items/323-0.png) that breaks user's masterpiece!)
 
-###### Tested on 70 players with positive feedbacks from hardcore redstone players (mcfallout.net)
+###### Tested on 70 players with positive feedbacks from hardcore redstone players (mcfallout.net)c
 
 ---------
   ### Features : 
@@ -14,11 +14,36 @@ This plugin is a minecraft server-side spigot plugin in order to enhance the exp
     1. All of the redstone components for calculating as part of the flickers are configurable, including 
     ![](https://www.csie.ntu.edu.tw/~b98902055/items/55-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/149-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/151-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/157-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/158-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/131-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/72-0.png) ![](https://www.csie.ntu.edu.tw/~b98902055/items/71-0.png)... and so on.
   - Soft Removal ![](https://www.csie.ntu.edu.tw/~b98902055/items/285-0.png) 
-    1. Intead of brutally place a sign ![](https://www.csie.ntu.edu.tw/~b98902055/items/323-0.png) that triggers the player. This plugin quickly find the source and 'gently turn it off'. To watch how the plugin did the job, go to [Media demo].
+    1. Intead of brutally place a sign ![](https://www.csie.ntu.edu.tw/~b98902055/items/323-0.png) that triggers the player. This plugin quickly find the source and ' gently turn in off '. To watch how the plugin did the job
     2. Heuristic functions are included to polish the removal and avoid the [notorious false positive].
   ### Media demo : 
+  
+  #A flicker without automatic re-triggering wire (Could be turned off by switching the comparator)
+ ![](https://i.imgur.com/UrfjbDx.png)
+#Detected! Temporarily remove the least amount of wire, put a BANNED effect on the location to notice the player. 
+![](https://i.imgur.com/ffu70q4.png)
+Also shown in console : 
+[09:58:17 INFO]: [RedstoneLocker] : Location{world=CraftWorld{name=world},x=15.0,y=21.0,z=-27.0,pitch=0.0,yaw=0.0} 
+is detected for redstone flickering.
+
+#after a short amount of time (configurable). 
+![](https://i.imgur.com/C3DYBL0.png)
+
+
+#A flicker with automatic re-triggering wire
+![](https://i.imgur.com/XQufdWC.png)
+
+#Detected! Temporarily remove the least amount of wire
+![](https://i.imgur.com/y46hWKN.png)
+
+#Put back all the wire after a short amount of time (configurable). 
+#ONLY the power source "redstone torch" is altered. 
+![](https://i.imgur.com/Aeg2dWK.png)
+  
+  
   - [Youtube link](https://www.youtube.com/watch?v=DOGYUIlFsTQ&feature=youtu.be) 
-   This video show how the plugin react to [normal redstone structures] and [evil redstone flickers], while being smart as avoiding [false positive].
+   This video show how the plugin react to [normal redstone structures] and [evil redstone flickers], 
+   while being smart as avoiding [false positive].
 ---------
 ### Environment 
 This build is compiled and tested on these environments.
@@ -88,7 +113,7 @@ none.
 
 ----
 ### Todos
- - Your suggestions are welcome at any time.
+ - Any suggestions from my customers are welcomed !
 
 ----
 ### License
@@ -110,3 +135,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    [spigot]: <https://spigotmc.org>
    [java]: <https://java.com/zh_TW/>
    [license]: <https://opensource.org/licenses/MIT>
+
