@@ -23,16 +23,16 @@ This plugin is a minecraft server-side spigot plugin in order to enhance the exp
 
 *Detected! Temporarily remove the least amount of wire, put a BANNED effect on the location to notice the player. 
 ![](https://i.imgur.com/ffu70q4.png)
-
 Also shown in console : 
 [09:58:17 INFO]: [RedstoneLocker] : Location{world=CraftWorld{name=world},x=15.0,y=21.0,z=-27.0,pitch=0.0,yaw=0.0} 
 is detected for redstone flickering.
 
 *After a short amount of time (configurable). 
+
 ![](https://i.imgur.com/C3DYBL0.png)
 
-
 *A flicker with automatic re-triggering wire
+
 ![](https://i.imgur.com/XQufdWC.png)
 
 *Detected! Temporarily remove the least amount of wire
